@@ -12,8 +12,8 @@ Feature: All resources have tags
     And its value must match the "<value>" regex
 
     Examples:
-      | tags          | value                           |
-      | BusinessUnit  | .+                              |
-      | Product       | .+                              |
-      | Component     | .+                              |
-      | Stage         | ^(prod\|staging\|dev\|sandbox)$ |
+      | tags          | value                       |
+      | BusinessUnit  | .+                          |
+      | Product       | .+                          |
+      | Component     | .+                          |
+      | Stage         | ^(prod\|stg\|dev\|sandbox)$ |
