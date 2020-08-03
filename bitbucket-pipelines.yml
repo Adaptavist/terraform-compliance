@@ -3,5 +3,8 @@ image: atlassian/default-image:2
 pipelines:
   branches:
     master:
-    - step: git push --mirror git@github.com:Adaptavist/terraform-compliance.git
+      - step:
+          name: GitHub mirror
+          script:
+            - git push --mirror git@github.com:Adaptavist/terraform-compliance.git
 
