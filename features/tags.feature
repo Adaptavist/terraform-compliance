@@ -12,8 +12,10 @@ Feature: All resources have tags
     And its value must match the "<value>" regex
 
     Examples:
-      | tags          | value                       |
-      | BusinessUnit  | .+                          |
-      | Product       | .+                          |
-      | Component     | .+                          |
-      | Stage         | ^(prod\|stg\|dev\|sandbox)$ |
+      | tags               | value                       |
+      | Avst:BusinessUnit  | .+                          |
+      | Avst:CostCenter    | .+                          |
+      | Avst:Project       | .+                          |
+      | Avst:Team          | .+                          |
+      | Avst:Stage:Name    | .+                          |
+      | Avst:Stage:Type    | ^(production\|staging\|development\|sandbox\|integration)$ |
