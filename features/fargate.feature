@@ -11,7 +11,7 @@ Feature: Fargate service
 
     Scenario: Fargate service must be isolated with a security group
         Then it must contain network_configuration
-        And it must contain security_groups
+        Then it must contain security_groups
         And its value must not be null
 
     Scenario: Fargate service must be behind a load balancer
