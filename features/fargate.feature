@@ -13,8 +13,3 @@ Feature: Fargate service
         Then it must contain network_configuration
         Then it must contain security_groups
         And its value must not be null
-
-    Scenario: Fargate service must be behind a load balancer
-        Then it must contain load_balancer
-        And it must contain target_group_arn
-        And its value must not be null
